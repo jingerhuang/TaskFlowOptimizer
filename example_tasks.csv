@@ -1,0 +1,8 @@
+id,duration,deps
+A,5,
+B,3,A
+C,4,A
+D,2,"B, C"
+E,6,D
+F,3,C
+G,2,"E, F"
