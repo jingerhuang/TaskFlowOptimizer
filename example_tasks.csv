@@ -1,8 +1,8 @@
-id,duration,deps
-A,5,
-B,3,A
-C,4,A
-D,2,"B, C"
-E,6,D
-F,3,C
-G,2,"E, F"
+id,duration,unit,deps
+A,2,h,
+B,30,min,A
+C,1,d,A
+D,500,ms,"B, C"
+E,1.5,h,D
+F,45,min,C
+G,0.5,d,"E, F"
