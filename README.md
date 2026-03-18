@@ -125,7 +125,43 @@
 - **Graphviz**: 用于拓扑图布局（必需）
 - **浏览器**: 现代浏览器（Chrome/Firefox/Edge/Safari）
 
-### 详细安装步骤
+### 🐳 Docker 部署（推荐）
+
+**最快速的部署方式，无需手动安装依赖！**
+
+#### 方式一：使用 Docker Compose（推荐）
+
+```bash
+# 一键启动服务
+docker-compose up -d
+
+# 查看日志
+docker-compose logs -f
+
+# 停止服务
+docker-compose down
+```
+
+访问地址：**http://localhost:8501**
+
+#### 方式二：直接使用 Docker
+
+```bash
+# 构建镜像
+docker build -t taskflow-optimizer:latest .
+
+# 运行容器
+docker run -d \
+  --name taskflow-optimizer \
+  -p 8501:8501 \
+  taskflow-optimizer:latest
+```
+
+**详细说明请查阅**: [DOCKER_DEPLOYMENT.md](DOCKER_DEPLOYMENT.md)
+
+---
+
+### 本地安装
 
 #### 步骤 1: 安装 Graphviz
 

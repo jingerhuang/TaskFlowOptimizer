@@ -20,7 +20,7 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
+# Virtual environments
 venv/
 env/
 ENV/
@@ -33,22 +33,24 @@ ENV/
 *.swo
 *~
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Streamlit
-.streamlit/secrets.toml
-
-# Docker
-.docker/
-*.pid
-
 # OS
 .DS_Store
 Thumbs.db
 
-# Logs
+# Project specific
 *.log
+.streamlit/
 
-# Environment variables
-.env
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+*.md
+LICENSE
+QUICKSTART.md
